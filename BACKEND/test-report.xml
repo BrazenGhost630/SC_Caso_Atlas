@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="src\app.test.js">
+    <testCase name="Suite de Pruebas Backend - API Atlas REST - CP-04: El middleware de seguridad debe rechazar con HTTP 403 si el rol es Editor" duration="7" />
+  </file>
+</testExecutions>

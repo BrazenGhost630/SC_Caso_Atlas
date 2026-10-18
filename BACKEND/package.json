@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node src/app.js",
     "dev": "nodemon",
-    "test": "vitest run --coverage",
-    "sonar": "npx sonar-scanner \"-Dsonar.projectKey=AtlasBackend\" \"-Dsonar.host.url=http://localhost:9000\" \"-Dsonar.login=sqp_2dc85789d3d05a63c341e00d77d93e36781b0cfe\""
+    "test": "vitest run --reporter=default --reporter=vitest-sonar-reporter --outputFile.vitest-sonar-reporter=test-report.xml --coverage",
+    "sonar": "npx sonar-scanner"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -20,8 +20,9 @@
     "swagger-ui-express": "^5.0.1"
   },
   "devDependencies": {
+    "@vitest/coverage-v8": "^3.0.0",
     "nodemon": "^3.1.0",
     "vitest": "^3.0.0",
-    "@vitest/coverage-v8": "^3.0.0"
+    "vitest-sonar-reporter": "^3.0.0"
   }
 }
